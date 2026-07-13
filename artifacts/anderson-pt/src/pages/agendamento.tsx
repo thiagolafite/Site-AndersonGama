@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ParticleBackground } from "@/components/particle-background";
+import { MarqueeStrip } from "@/components/marquee-strip";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -78,6 +79,7 @@ export default function Agendamento() {
       <Navbar />
 
       <main className="flex-grow pt-32 pb-24 relative z-10">
+        <MarqueeStrip className="mb-12" speed={55} />
         <div className="container max-w-4xl px-4">
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-display text-white uppercase mb-4">Agendar Avaliação</h1>

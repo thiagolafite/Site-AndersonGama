@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ParticleBackground } from "@/components/particle-background";
+import { MarqueeStrip } from "@/components/marquee-strip";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -55,6 +56,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* Marquee Strip */}
+      <MarqueeStrip />
 
       {/* Services Section */}
       <section className="py-24 bg-card relative">
@@ -155,6 +159,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Marquee Strip 2 — reversed, before CTA */}
+      <MarqueeStrip
+        phrases={["ELITE TRAINING","SUA MELHOR VERSÃO","SUPERE LIMITES","NUNCA DESISTA","CORPO E MENTE","8 ANOS DE EXPERIÊNCIA","RESULTADOS REAIS","MÉTODO COMPROVADO"]}
+        reverse
+        speed={50}
+      />
 
       {/* CTA Section */}
       <section className="py-24 bg-primary relative overflow-hidden">

@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ParticleBackground } from "@/components/particle-background";
+import { MarqueeStrip } from "@/components/marquee-strip";
 import { useListBlogPosts } from "@workspace/api-client-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Link, useSearch } from "wouter";
@@ -30,6 +31,7 @@ export default function BlogList() {
       <Navbar />
 
       <main className="flex-grow pt-32 pb-24 relative z-10">
+        <MarqueeStrip className="mb-12" speed={55} />
         <div className="container px-4">
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-4">Blog</h1>
