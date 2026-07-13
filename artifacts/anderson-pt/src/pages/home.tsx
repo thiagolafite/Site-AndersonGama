@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { ParticleBackground } from "@/components/particle-background";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -18,10 +19,11 @@ export default function Home() {
           <img 
             src={heroBg} 
             alt="Gym Background" 
-            className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+            className="w-full h-full object-cover opacity-20 mix-blend-overlay"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent"></div>
+          <ParticleBackground opacity={0.9} intensity={1.2} />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-transparent z-10"></div>
         </div>
 
         <div className="container relative z-10 px-4 mt-20">

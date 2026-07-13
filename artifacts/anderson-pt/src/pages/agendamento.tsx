@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { ParticleBackground } from "@/components/particle-background";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -69,10 +70,14 @@ export default function Agendamento() {
   }
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col relative overflow-hidden">
+      {/* Subtle particle background across the whole page */}
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <ParticleBackground opacity={0.35} intensity={0.7} />
+      </div>
       <Navbar />
 
-      <main className="flex-grow pt-32 pb-24">
+      <main className="flex-grow pt-32 pb-24 relative z-10">
         <div className="container max-w-4xl px-4">
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-display text-white uppercase mb-4">Agendar Avaliação</h1>
