@@ -48,7 +48,7 @@ export default function Home() {
                 <Link href="/agendamento">Agendar Avaliação Gratuita</Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-lg">
-                <a href="https://wa.me/5571878411755" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/557187841755" target="_blank" rel="noopener noreferrer">
                   Falar no WhatsApp
                 </a>
               </Button>

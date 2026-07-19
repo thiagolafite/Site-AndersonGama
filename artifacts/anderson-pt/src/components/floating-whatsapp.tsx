@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { MessageCircle } from "lucide-react";
 
 export default function FloatingWhatsApp() {
-  const phoneNumber = "5571878411755";
+  const phoneNumber = "557187841755";
   const message = encodeURIComponent("Olá Anderson! Gostaria de saber mais sobre a consultoria.");
 
   return (

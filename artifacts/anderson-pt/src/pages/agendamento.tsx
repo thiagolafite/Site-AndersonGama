@@ -101,7 +101,7 @@ export default function Agendamento() {
               </p>
               <Button asChild size="lg" className="text-lg">
                 <a 
-                  href={`https://wa.me/5571878411755?text=Ol%C3%A1%20Anderson!%20Acabei%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20pelo%20site.`} 
+                  href={`https://wa.me/557187841755?text=Ol%C3%A1%20Anderson!%20Acabei%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20pelo%20site.`} 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
