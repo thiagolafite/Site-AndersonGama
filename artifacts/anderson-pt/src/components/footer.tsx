@@ -15,7 +15,7 @@ export function Footer() {
               Treinamento de alto rendimento. Transforme seu corpo com metodologia testada e resultados comprovados. Acompanhamento presencial e online.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="h-10 w-10 flex items-center justify-center rounded-full bg-secondary text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors">
+              <a href="https://www.instagram.com/andersongama_personal/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 flex items-center justify-center rounded-full bg-secondary text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors">
                 <Instagram size={20} />
               </a>
               <a href="#" className="h-10 w-10 flex items-center justify-center rounded-full bg-secondary text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors">
