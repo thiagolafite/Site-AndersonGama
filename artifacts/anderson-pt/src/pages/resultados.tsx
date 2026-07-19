@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { ParticleBackground } from "@/components/particle-background";
 import { MarqueeStrip } from "@/components/marquee-strip";
 import { useListTestimonials } from "@workspace/api-client-react";
+import { TestimonialForm } from "@/components/testimonial-form";
 import { Skeleton } from "@/components/ui/skeleton";
 import { motion } from "framer-motion";
 import before1 from "@assets/transformation-before-1.jpg";
@@ -130,6 +131,7 @@ export default function Resultados() {
         </div>
       </main>
 
+      <TestimonialForm />
       <Footer />
     </div>
   );
