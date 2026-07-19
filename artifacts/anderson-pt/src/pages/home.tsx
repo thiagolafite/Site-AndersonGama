@@ -48,7 +48,7 @@ export default function Home() {
                 <Link href="/agendamento">Agendar Avaliação Gratuita</Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-lg">
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5571878411755" target="_blank" rel="noopener noreferrer">
                   Falar no WhatsApp
                 </a>
               </Button>
@@ -123,7 +123,7 @@ export default function Home() {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-card p-6 border border-border shadow-2xl rounded-lg max-w-[200px]">
-                <p className="font-display text-4xl text-primary mb-1">8+</p>
+                <p className="font-display text-4xl text-primary mb-1">16+</p>
                 <p className="text-sm text-muted-foreground uppercase font-semibold tracking-wider">Anos de Experiência</p>
               </div>
             </motion.div>
@@ -140,7 +140,7 @@ export default function Home() {
               
               <div className="space-y-6 text-muted-foreground text-lg mb-10">
                 <p>
-                  Sou formado em Educação Física com especialização em Fisiologia do Exercício, Hipertrofia e Emagrecimento. Nos últimos 8 anos, dediquei minha vida a entender como o corpo humano responde ao estímulo.
+                  Sou formado em Educação Física com especialização em Fisiologia do Exercício, Hipertrofia e Emagrecimento. Nos últimos 16 anos, dediquei minha vida a entender como o corpo humano responde ao estímulo.
                 </p>
                 <p>
                   Meu objetivo não é apenas passar um treino, é construir resultados reais. Chega de treinos genéricos e promessas vazias. Aqui o trabalho é levado a sério.
