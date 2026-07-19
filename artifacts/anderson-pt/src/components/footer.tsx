@@ -50,7 +50,7 @@ export function Footer() {
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="text-primary shrink-0 mt-1" size={20} />
-                <span>Rua das Palmeiras, 150<br/>São Paulo, SP</span>
+                <span>Engenho Velho, Brotas<br/>Salvador, Bahia</span>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="text-primary shrink-0" size={20} />
@@ -58,7 +58,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="text-primary shrink-0" size={20} />
-                <span>anderson.pt@gmail.com</span>
+                <a href="mailto:Jbdsdj19@gmail.com" className="hover:text-primary transition-colors">Jbdsdj19@gmail.com</a>
               </li>
             </ul>
           </div>
