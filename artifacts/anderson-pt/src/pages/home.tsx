@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, Dumbbell, Flame, HeartPulse, LineChart, Users } from "lucide-react";
 import heroBg from "@assets/hero-bg.jpg";
-import andersonProfile from "@assets/anderson-profile.jpg";
+import andersonProfile from "@assets/anderson-profile.png";
 
 export default function Home() {
   return (
