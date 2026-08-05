@@ -40,9 +40,9 @@ export function Navbar() {
         headerBg
       )}
     >
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <img src={logoImg} alt="Anderson Gama Personal Trainer" className="h-12 md:h-14 w-auto object-contain" />
+      <div className="container mx-auto px-4 h-20 md:h-24 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 py-1">
+          <img src={logoImg} alt="Anderson Gama Personal Trainer" className="h-14 md:h-18 lg:h-20 w-auto object-contain drop-shadow-md transition-transform duration-300 hover:scale-105" />
         </Link>
 
         {/* Desktop Nav */}

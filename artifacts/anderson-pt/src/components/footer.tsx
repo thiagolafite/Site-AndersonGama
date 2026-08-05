@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-6">
-              <img src={logoImg} alt="Anderson Gama Personal Trainer" className="h-14 md:h-16 w-auto object-contain" />
+              <img src={logoImg} alt="Anderson Gama Personal Trainer" className="h-16 md:h-20 lg:h-24 w-auto object-contain" />
             </Link>
             <p className="text-muted-foreground mb-6 max-w-md">
               Treinamento de alto rendimento. Transforme seu corpo com metodologia testada e resultados comprovados. Acompanhamento presencial e online.
