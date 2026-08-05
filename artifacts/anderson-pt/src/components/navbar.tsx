@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
+import logoImg from "@assets/logo.png";
 
 export function Navbar() {
   const [location] = useLocation();
@@ -41,8 +42,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-bold tracking-wider text-white">ANDERSON</span>
-          <span className="font-display text-2xl font-bold text-primary">PT</span>
+          <img src={logoImg} alt="Anderson Gama Personal Trainer" className="h-12 md:h-14 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
