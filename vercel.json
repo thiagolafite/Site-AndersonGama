@@ -1,5 +1,6 @@
 {
-  "buildCommand": "pnpm --filter @workspace/anderson-pt run build && node scripts/prepare-deploy.js",
+  "framework": null,
+  "buildCommand": "pnpm run build",
   "outputDirectory": "public",
   "rewrites": [
     {
