@@ -1,6 +1,6 @@
 {
-  "buildCommand": "pnpm --filter @workspace/anderson-pt run build",
-  "outputDirectory": "artifacts/anderson-pt/dist/public",
+  "buildCommand": "pnpm --filter @workspace/anderson-pt run build && node scripts/prepare-deploy.js",
+  "outputDirectory": "public",
   "rewrites": [
     {
       "source": "/(.*)",
