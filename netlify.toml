@@ -1,0 +1,8 @@
+[build]
+  command = "pnpm --filter @workspace/anderson-pt run build"
+  publish = "artifacts/anderson-pt/dist/public"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
