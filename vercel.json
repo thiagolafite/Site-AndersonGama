@@ -1,7 +1,6 @@
 {
-  "framework": null,
-  "buildCommand": "pnpm run build",
-  "outputDirectory": "public",
+  "buildCommand": "pnpm --filter @workspace/anderson-pt run build",
+  "outputDirectory": "artifacts/anderson-pt/dist/public",
   "rewrites": [
     {
       "source": "/(.*)",
