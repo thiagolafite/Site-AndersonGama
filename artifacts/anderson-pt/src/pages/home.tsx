@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, Dumbbell, Flame, HeartPulse, LineChart, Users } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import heroBg from "@assets/hero-bg.jpg";
 import andersonProfile from "@assets/anderson-profile.png";
 
@@ -48,7 +49,8 @@ export default function Home() {
                 <Link href="/agendamento">Agendar Avaliação Gratuita</Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-lg">
-                <a href="https://wa.me/557187841755" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/557187841755" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <FaWhatsapp size={22} className="text-[#25D366]" />
                   Falar no WhatsApp
                 </a>
               </Button>
