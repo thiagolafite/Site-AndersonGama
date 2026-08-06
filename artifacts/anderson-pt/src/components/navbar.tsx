@@ -41,8 +41,12 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 h-20 md:h-24 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 py-1">
-          <img src={logoImg} alt="Anderson Gama Personal Trainer" className="h-14 md:h-18 lg:h-20 w-auto object-contain drop-shadow-md transition-transform duration-300 hover:scale-105" />
+        <Link href="/" className="flex items-center overflow-visible py-2">
+          <img 
+            src={logoImg} 
+            alt="Anderson Gama Personal Trainer" 
+            className="h-44 sm:h-52 md:h-64 lg:h-72 w-auto object-contain shrink-0 -my-10 sm:-my-14 md:-my-20 lg:-my-24 transition-transform duration-300 hover:scale-105" 
+          />
         </Link>
 
         {/* Desktop Nav */}
