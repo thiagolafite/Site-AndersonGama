@@ -1,16 +1,20 @@
 import { useState, useRef, useEffect } from "react";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa6";
-import { User, MessageSquareText, X } from "lucide-react";
+import { User, MessageSquareText, X, Check } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 export default function FloatingWhatsApp() {
   const [isInstagramOpen, setIsInstagramOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
   const instagramRef = useRef<HTMLDivElement>(null);
+  const { toast } = useToast();
 
   const phoneNumber = "557187841755";
   const whatsappMessage = encodeURIComponent("Olá Anderson! Gostaria de saber mais sobre a consultoria.");
 
   const instagramProfileUrl = "https://www.instagram.com/andersongama_personal/";
-  const instagramDirectUrl = "https://ig.me/m/andersongama_personal";
+  const instagramDirectUrl = "https://www.instagram.com/direct/t/102818864566526/";
+  const autoMessage = "Olá anderson,tenho interesse em saber mais sobre a consultoria";
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -22,13 +26,31 @@ export default function FloatingWhatsApp() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const handleSendDirect = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsInstagramOpen(false);
+
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(autoMessage).catch(() => {});
+      setCopied(true);
+      setTimeout(() => setCopied(false), 3000);
+    }
+
+    toast({
+      title: "Mensagem Copiada!",
+      description: "A mensagem foi copiada para sua área de transferência. Cole no Direct!",
+    });
+
+    window.open(instagramDirectUrl, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
       {/* Instagram Options Popover */}
       {isInstagramOpen && (
         <div 
           ref={instagramRef}
-          className="mb-1 w-64 rounded-2xl bg-card/95 border border-border p-4 shadow-2xl backdrop-blur-md animate-in fade-in-0 zoom-in-95 duration-200"
+          className="mb-1 w-72 rounded-2xl bg-card/95 border border-border p-4 shadow-2xl backdrop-blur-md animate-in fade-in-0 zoom-in-95 duration-200"
         >
           <div className="flex items-center justify-between border-b border-border/60 pb-2 mb-3">
             <div className="flex items-center gap-2 text-white font-semibold text-sm">
@@ -46,15 +68,19 @@ export default function FloatingWhatsApp() {
           <div className="flex flex-col gap-2">
             <a
               href={instagramDirectUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsInstagramOpen(false)}
+              onClick={handleSendDirect}
               className="flex items-center gap-3 w-full p-2.5 rounded-xl bg-gradient-to-r from-[#dc2743]/10 to-[#bc1888]/10 border border-[#dc2743]/30 text-white text-sm font-medium hover:from-[#dc2743]/20 hover:to-[#bc1888]/20 hover:border-[#dc2743]/60 transition-all duration-200"
             >
-              <MessageSquareText size={18} className="text-[#dc2743] shrink-0" />
+              {copied ? (
+                <Check size={18} className="text-green-400 shrink-0" />
+              ) : (
+                <MessageSquareText size={18} className="text-[#dc2743] shrink-0" />
+              )}
               <div className="flex flex-col text-left">
                 <span className="font-semibold text-xs leading-tight">Enviar Mensagem Direct</span>
-                <span className="text-[10px] text-muted-foreground">Falar direto no Instagram</span>
+                <span className="text-[10px] text-muted-foreground line-clamp-1">
+                  "{autoMessage}"
+                </span>
               </div>
             </a>
 
