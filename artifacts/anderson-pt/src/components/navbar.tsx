@@ -41,11 +41,11 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 h-20 md:h-24 flex items-center justify-between">
-        <Link href="/" className="flex items-center overflow-visible py-2">
+        <Link href="/" className="flex items-center py-2">
           <img 
             src={logoImg} 
             alt="Anderson Gama Personal Trainer" 
-            className="h-44 sm:h-52 md:h-64 lg:h-72 w-auto object-contain shrink-0 -my-10 sm:-my-14 md:-my-20 lg:-my-24 transition-transform duration-300 hover:scale-105" 
+            className="h-10 sm:h-12 md:h-14 lg:h-16 max-w-[200px] sm:max-w-[280px] md:max-w-[360px] lg:max-w-[420px] w-auto object-contain transition-transform duration-300 hover:scale-105" 
           />
         </Link>
 
