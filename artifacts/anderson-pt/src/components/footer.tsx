@@ -8,11 +8,11 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="inline-block mb-6">
+            <Link href="/" className="inline-block overflow-hidden h-16 md:h-20 mb-6">
               <img 
                 src={logoImg} 
                 alt="Anderson Gama Personal Trainer" 
-                className="h-12 md:h-16 max-w-[280px] md:max-w-[360px] w-auto object-contain" 
+                className="h-44 md:h-56 w-auto object-contain -my-14 md:-my-18" 
               />
             </Link>
             <p className="text-muted-foreground mb-6 max-w-md">
