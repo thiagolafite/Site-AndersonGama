@@ -1,18 +1,16 @@
 import { useRef } from "react";
 
 const DEFAULT_PHRASES = [
-  "TREINO",
-  "DISCIPLINA",
+  "REABILITAÇÃO",
+  "SINAIS VITAIS",
+  "AFERIÇÃO DE P.A.",
+  "HIPERTROFIA",
+  "EMAGRECIMENTO",
+  "NUTRIÇÃO",
   "RESULTADO",
-  "FORÇA",
   "EVOLUÇÃO",
-  "SUPERAÇÃO",
   "DEDICAÇÃO",
-  "FOCO",
   "TRANSFORMAÇÃO",
-  "CONSISTÊNCIA",
-  "MENTALIDADE",
-  "POTÊNCIA",
 ];
 
 interface MarqueeStripProps {

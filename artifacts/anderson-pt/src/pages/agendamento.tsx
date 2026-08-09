@@ -27,7 +27,7 @@ const formSchema = z.object({
   name: z.string().min(2, "Nome é obrigatório"),
   phone: z.string().min(8, "Telefone inválido"),
   email: z.string().email("E-mail inválido").optional().or(z.literal("")),
-  goal: z.enum(["emagrecimento", "hipertrofia", "condicionamento", "iniciantes", "outro"]),
+  goal: z.enum(["reabilitacao", "sinais_vitais", "afericao_pa", "hipertrofia_emagrecimento", "nutricao", "outro"]),
   desiredDate: z.string().min(1, "Data é obrigatória"),
   desiredTime: z.string().min(1, "Horário é obrigatório"),
   notes: z.string().optional(),
@@ -44,7 +44,7 @@ export default function Agendamento() {
       name: "",
       phone: "",
       email: "",
-      goal: "hipertrofia",
+      goal: "hipertrofia_emagrecimento",
       desiredDate: "",
       desiredTime: "",
       notes: "",
@@ -171,10 +171,11 @@ export default function Agendamento() {
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
-                              <SelectItem value="hipertrofia">Hipertrofia</SelectItem>
-                              <SelectItem value="emagrecimento">Emagrecimento</SelectItem>
-                              <SelectItem value="condicionamento">Condicionamento Físico</SelectItem>
-                              <SelectItem value="iniciantes">Sou Iniciante</SelectItem>
+                              <SelectItem value="reabilitacao">Reabilitação</SelectItem>
+                              <SelectItem value="sinais_vitais">Sinais Vitais</SelectItem>
+                              <SelectItem value="afericao_pa">Aferição de P.A.</SelectItem>
+                              <SelectItem value="hipertrofia_emagrecimento">Especialista em Hipertrofia e Emagrecimento</SelectItem>
+                              <SelectItem value="nutricao">Nutrição</SelectItem>
                               <SelectItem value="outro">Outro</SelectItem>
                             </SelectContent>
                           </Select>

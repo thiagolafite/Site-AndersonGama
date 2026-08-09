@@ -5,7 +5,7 @@ import { MarqueeStrip } from "@/components/marquee-strip";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, CheckCircle2, Dumbbell, Flame, HeartPulse, LineChart, Users } from "lucide-react";
+import { Activity, Apple, CheckCircle2, Dumbbell, Flame, HeartPulse, Stethoscope } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa6";
 import heroBg from "@assets/hero-bg.jpg";
 import andersonProfile from "@assets/anderson-profile.png";
@@ -66,40 +66,35 @@ export default function Home() {
       <section className="py-24 bg-card relative">
         <div className="container px-4">
           <div className="text-center mb-16">
-            <h2 className="text-primary font-display tracking-widest mb-2">METODOLOGIA</h2>
-            <h3 className="text-4xl md:text-5xl font-display text-white uppercase">Serviços Especializados</h3>
+            <h2 className="text-primary font-display tracking-widest mb-2">METODOLOGIA E ÁREAS DE ATUAÇÃO</h2>
+            <h3 className="text-4xl md:text-5xl font-display text-white uppercase">Especialidades</h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ServiceCard 
-              icon={<Dumbbell size={40} />}
-              title="Personal Presencial"
-              desc="Treinamento exclusivo e acompanhamento lado a lado para garantir execução perfeita e intensidade máxima."
-            />
-            <ServiceCard 
-              icon={<LineChart size={40} />}
-              title="Consultoria Online"
-              desc="Planilhas de treino personalizadas enviadas via app com vídeos demonstrativos e suporte no WhatsApp."
-            />
-            <ServiceCard 
-              icon={<Flame size={40} />}
-              title="Emagrecimento"
-              desc="Protocolos focados em queima de gordura preservando massa magra e melhorando o condicionamento."
-            />
-            <ServiceCard 
-              icon={<Users size={40} />}
-              title="Hipertrofia"
-              desc="Métodos avançados para ganho de massa muscular com periodização estratégica."
-            />
-            <ServiceCard 
-              icon={<CheckCircle2 size={40} />}
-              title="Para Iniciantes"
-              desc="Acompanhamento passo a passo para quem está começando agora, focando na base e adaptação."
+              icon={<Activity size={40} />}
+              title="Reabilitação"
+              desc="Treinamento especializado em prevenção de lesões, recuperação funcional, fortalecimento articular e ganho de mobilidade."
             />
             <ServiceCard 
               icon={<HeartPulse size={40} />}
-              title="Condicionamento"
-              desc="Treinamento focado em saúde, mobilidade, flexibilidade e capacidade cardiovascular."
+              title="Sinais Vitais"
+              desc="Acompanhamento contínuo dos parâmetros fisiológicos para garantir que cada treino seja executado com máxima segurança."
+            />
+            <ServiceCard 
+              icon={<Stethoscope size={40} />}
+              title="Aferição de P.A."
+              desc="Monitoramento rigoroso da pressão arterial antes, durante e após os exercícios, oferecendo suporte total para hipertensos e grupos especiais."
+            />
+            <ServiceCard 
+              icon={<Flame size={40} />}
+              title="Especialista em Hipertrofia e Emagrecimento"
+              desc="Protocolos estratégicos e individualizados para ganho de massa muscular magra e queima de gordura eficiente."
+            />
+            <ServiceCard 
+              icon={<Apple size={40} />}
+              title="Nutrição"
+              desc="Orientação e estratégias de nutrição esportiva integradas para otimizar a regeneração muscular, energia e resultados estéticos."
             />
           </div>
         </div>
