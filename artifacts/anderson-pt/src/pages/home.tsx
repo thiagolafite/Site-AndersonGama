@@ -5,7 +5,7 @@ import { MarqueeStrip } from "@/components/marquee-strip";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Activity, Apple, CheckCircle2, Dumbbell, Flame, HeartPulse, Stethoscope } from "lucide-react";
+import { Activity, Apple, ArrowRight, CheckCircle2, Dumbbell, Flame, HeartPulse, Stethoscope } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa6";
 import heroBg from "@assets/hero-bg.jpg";
 import andersonProfile from "@assets/anderson-profile.jpg";
