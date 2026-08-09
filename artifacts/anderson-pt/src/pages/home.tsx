@@ -8,7 +8,7 @@ import { Link } from "wouter";
 import { Activity, Apple, CheckCircle2, Dumbbell, Flame, HeartPulse, Stethoscope } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa6";
 import heroBg from "@assets/hero-bg.jpg";
-import andersonProfile from "@assets/anderson-profile.png";
+import andersonProfile from "@assets/anderson-profile.jpg";
 
 export default function Home() {
   return (
@@ -116,7 +116,7 @@ export default function Home() {
                 <img 
                   src={andersonProfile} 
                   alt="Anderson Personal Trainer" 
-                  className="w-full h-full object-cover grayscale-[0.5] hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover object-top hover:scale-105 transition-all duration-700"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-card p-6 border border-border shadow-2xl rounded-lg max-w-[200px]">
