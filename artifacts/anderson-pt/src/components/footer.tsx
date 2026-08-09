@@ -70,7 +70,7 @@ export function Footer() {
         
         <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Anderson Personal Trainer. Todos os direitos reservados.</p>
-          <p className="mt-2 md:mt-0">CREF 123456-G/SP</p>
+          <p className="mt-2 md:mt-0">CREF 020206-G/BA</p>
         </div>
       </div>
     </footer>

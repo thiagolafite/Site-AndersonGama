@@ -137,15 +137,15 @@ export default function Home() {
               
               <div className="space-y-6 text-muted-foreground text-lg mb-10">
                 <p>
-                  Sou formado em Educação Física com especialização em Fisiologia do Exercício, Hipertrofia e Emagrecimento. Nos últimos 16 anos, dediquei minha vida a entender como o corpo humano responde ao estímulo.
+                  Sou Profissional de Educação Física com registro no CREF e capacitação técnica em Nutrição e Reabilitação. Dedico minha trajetória a entender as necessidades de cada aluno para entregar saúde, segurança e alta performance.
                 </p>
                 <p>
-                  Meu objetivo não é apenas passar um treino, é construir resultados reais. Chega de treinos genéricos e promessas vazias. Aqui o trabalho é levado a sério.
+                  Meu objetivo não é apenas passar um treino, é construir resultados reais com acompanhamento humanizado e científico.
                 </p>
                 <ul className="space-y-3 mt-6">
-                  <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary" /> Especialista em Biomecânica</li>
-                  <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary" /> Pós-graduado em Nutrição Esportiva</li>
-                  <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary" /> Registro CREF: 123456-G/SP</li>
+                  <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary" /> CREF 020206-G/BA</li>
+                  <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary" /> Curso técnico em nutrição</li>
+                  <li className="flex items-center gap-3 text-white"><CheckCircle2 className="text-primary" /> Curso técnico de reabilitação</li>
                 </ul>
               </div>
 
